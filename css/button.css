@@ -1,0 +1,74 @@
+button {
+    display: inline-block;
+    border-radius: 20px;
+    background-color: #a6a6a6;
+    border: none;
+    color: #000000;
+    text-align: center;
+    font-size: 18px;
+    padding: 16px;
+    width: 10vw; /* Allow buttons to take full width of grid cells */
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    position: relative;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0); 
+}
+
+button span {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+button span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+}
+
+button:hover {
+    box-shadow: 0 0 15px rgb(255, 255, 255);
+}
+
+button:hover span {
+    padding-right: 15px;
+}
+
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    width: 100%;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    button {
+        font-size: 4vw;
+    }
+
+    .button-container {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    button {
+        font-size: 5vw;
+    }
+
+    .button-container {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+}
+
