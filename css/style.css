@@ -81,19 +81,18 @@ a {
     display: flex;
 }
 
-.rainbow::before {
+.rainbow:before {
     content: '';
     position: absolute;
     z-index: -2;
     left: -50%;
-    top: -50%;
+    top: -150%;
     width: 200%;
-    height: 200%;
+    height: 400%;
     background-repeat: no-repeat;
-    background-size: 40% 80%;
-    background-color: #45454500;
+    background-size: 50% 50%;
     background-position: 0 0, 100% 0, 100% 100%, 0 100%;
-    background-image: linear-gradient(#454545, #ffff);
+    background-image: conic-gradient(#000000, #575757, #000000);
     animation: rotate 5s linear infinite;
 }
 
@@ -106,8 +105,8 @@ a {
     width: calc(100% - 12px);
     height: calc(100% - 12px);
     background: #8d8d8d;
-    border-radius: 40px;
-    animation: opacityChange 1000000000s infinite alternate;
+    border-radius: 35px;
+    animation: opacityChange 10000000000000s infinite alternate;
 }
 
 img {
