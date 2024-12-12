@@ -132,14 +132,14 @@ img {
 
 @media only screen and (max-width: 1200px) {
     .rainbow {
-        grid-template-columns: repeat(5, 1fr); /* 5 buttons per row */
+        grid-template-columns: repeat(5, 1fr); 
     }
 
     button {
         font-size: 4vw;
         padding: 10px;
         margin: 5px;
-        width: 100%; /* Button adjusts to fit grid columns */
+        width: 100%; 
     }
 
     h1, h2, p {
@@ -180,5 +180,12 @@ img {
 
     button {
         font-size: 5vw;
+    }
+
+    .col {
+        max-width: 200px;
+        max-height: 200px;
+        font-size: 5vw;
+        
     }
 }
