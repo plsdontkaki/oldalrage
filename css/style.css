@@ -82,7 +82,7 @@ a {
     text-decoration: none;
 }
 
-@media (max-width: 1080px) {
+@media only screen and (max-width: 600px) {
     h1 {
         font-size: 10vw;
         margin-top: 5vh;
