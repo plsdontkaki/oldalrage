@@ -1,192 +1,124 @@
-@import url('https://fonts.cdnfonts.com/css/minecraft-3');
-@import url('satoshi.css');
-@import url('plank.css');
-@import url('button.css');
-@import url(skin-A2Whdyl9.js);
+@import url(plank.css);
+@import url(satoshi.css);
+
 
 body {
-    background-color: #717171;
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: linear-gradient(rgb(63, 63, 63), rgb(116, 116, 116));
+    text-align: center;
+    justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    display: flexbox;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    font-size: 5vw;
+    margin-top: 20px;
+    font-family: Planet-Kosmos;
+    user-select: none;
+}
+
+.container {
     display: flex;
     flex-direction: column;
-    padding: 0;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.123);
+    border-color: rgba(255, 255, 255, 0);
+    border-style: solid;
+    max-width: 30vw;
+    max-height: 70vh;
+    height: 70vh;
+    margin-left: 650px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
-h1, h2, p {
-    font-size: 25px;
-    font-family: 'Satoshi-black', sans-serif;
-    color: black;
-    text-align: center;
-    
+button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    gap: 1vw;
+    background-color: rgba(97, 97, 97, 0.568);
+    max-width: 27vw;
+    max-height: 12vh;
+    height: 12vh;
+    width: 27vw;
+    border-radius: 25px;
+    border-color: rgba(0, 0, 0, 0.158);
+    border-style: solid;
+    transition: border-color 0.2s, box-shadow 0.5s;
+    padding-left: 1vw; 
 }
 
-h3 {
-    font-size: 3vw;
-    text-align: center;
-    color: black;
-    font-family: 'Satoshi-black';
+button:hover {
+    border-color: rgba(255, 255, 255, 0.281);
+    border-style: solid;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
 }
 
-h4 {
-    font-size: 7.5vw;
-    text-align: center;
-    color: black;
-    font-family: 'Planet-Kosmos';
-    padding-top: 2vw;
+button img {
+    height: 8vh;
+    width: 5vw;
+    object-fit: contain;
+    margin-right: 0; 
+    margin-left: 0;  
+    display: block;
 }
 
-h5 {
-    text-align: right;
-    color: black;
-    font-size: 10px;
-    font-family: monospace;
+button span {
+    color: rgb(255, 255, 255);
+    font-size: 2vw;
+    font-family: Satoshi-black;
+    user-select: none;
+    margin-left: 4vw; 
 }
 
 a {
-    font-size: 5vw;
-    text-align: center;
     text-decoration: none;
 }
 
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-
-@keyframes rotate {
-    100% {
-        transform: rotate(1turn);
-    }
-}
-
-@keyframes opacityChange {
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0.5;
-    }
-}
-
-.rainbow {
-    position: relative;
-    z-index: 0;
-    width: auto;
-    height: auto;
-    border-radius: 40px;
-    overflow: hidden;
-    padding: 2rem;
-    display: flex;
-}
-
-.rainbow:before {
-    content: '';
-    position: absolute;
-    z-index: -2;
-    left: -50%;
-    top: -150%;
-    width: 200%;
-    height: 400%;
-    background-repeat: no-repeat;
-    background-size: 50% 50%;
-    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
-    background-image: conic-gradient(#000000, #575757, #000000);
-    animation: rotate 5s linear infinite;
-}
-
-.rainbow::after {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    left: 6px;
-    top: 6px;
-    width: calc(100% - 12px);
-    height: calc(100% - 12px);
-    background: #8d8d8d;
-    border-radius: 35px;
-    animation: opacityChange 10000000000000s infinite alternate;
-}
-
-img {
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    height: auto;
-}
-
-.responsive {
-    max-width: 100%;
-    height: auto;
-    
-}
-
-.sc {
-    size: 20px;
-}
-
-.spacer {
-    height: 2vw;
-}
-
-@media only screen and (max-width: 1200px) {
-    .rainbow {
-        grid-template-columns: repeat(5, 1fr); 
+@media (max-width: 600px) {
+    h1 {
+        font-size: 10vw;
+        margin-top: 5vh;
+        margin-bottom: 10vh;
     }
 
+    .container {
+        max-width: 90vw;
+        margin-left: 3vw;
+        height: auto;
+        max-height: none;
+        box-sizing: border-box;
+        max-height: 60vh;
+        height: 60vh;
+    }
     button {
-        font-size: 4vw;
-        padding: 10px;
-        margin: 5px;
-        width: 100%; 
+        max-width: 85vw;
+        width: 90vw;
+        height: 10vh;
+        max-height: 10vh;
+        padding-left: 2vw;
     }
-
-    h1, h2, p {
-        font-size: 4vw;
+    button img {
+        height: 10vh;
+        width: 10vw;
+        margin-left: 20px;
     }
-
-    h3 {
-        font-size: 6.5vw;
+    button span {
+        font-size: 5vw;
+        margin-left: 80px;
     }
-
-    h4 {
+    h1 {
         font-size: 10vw;
     }
 
     a {
-        font-size: 10vw;
-    }
-
-    .spacer {
-        height: 4vw;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .rainbow {
-        width: fit-content;
-    }
-
-    button {
-        font-size: 4vw;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    .rainbow {
-        width: fit-content;
-    }
-
-    button {
-        font-size: 5vw;
-    }
-
-    .col {
-        max-width: 200px;
-        max-height: 200px;
-        font-size: 5vw;
-        
+        text-decoration: none;
     }
 }
