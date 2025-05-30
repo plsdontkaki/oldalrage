@@ -133,20 +133,20 @@ a {
     }
 
     .container {
-        max-width: 30vw;
-        margin-left: 35%;
+        max-width: 35vw;
+        margin-left: 33%;
         height: auto;
         max-height: none;
         box-sizing: border-box;
-        max-height: 50vh;
+        max-height: 60vh;
         height: 60vh;
         width: 90vw;
     }
     button {
-        max-width: 25vw;
+        max-width: 30vw;
         width: 40vw;
         height: 10vh;
-        max-height: 7.5vh;
+        max-height: 10vh;
         padding-left: 0.5vw;
     }
     button img {
@@ -155,7 +155,7 @@ a {
         margin-left: 20px;
     }
     button span {
-        font-size: 1.5vw;
+        font-size: 2vw;
         margin-left: 80px;
     }
     
