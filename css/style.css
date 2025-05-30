@@ -125,28 +125,28 @@ a {
     }
 }
 
-@media only screen and (min-width: 800px) and (max-width: 1200px) {
+@media only screen and (min-width: 800px) and (max-width: 1900px) {
     h1 {
-        font-size: 10vw;
-        margin-top: 4.5vh;
+        font-size: 8vw;
+        margin-top: 3vh;
         margin-bottom: 3vh;
     }
 
     .container {
-        max-width: 45vw;
-        margin-left: 50%;
+        max-width: 30vw;
+        margin-left: 35%;
         height: auto;
         max-height: none;
         box-sizing: border-box;
-        max-height: 60vh;
+        max-height: 50vh;
         height: 60vh;
         width: 90vw;
     }
     button {
-        max-width: 40vw;
+        max-width: 25vw;
         width: 40vw;
         height: 10vh;
-        max-height: 10vh;
+        max-height: 7.5vh;
         padding-left: 0.5vw;
     }
     button img {
@@ -155,7 +155,7 @@ a {
         margin-left: 20px;
     }
     button span {
-        font-size: 2.5vw;
+        font-size: 1.5vw;
         margin-left: 80px;
     }
     
